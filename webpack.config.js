@@ -15,6 +15,7 @@ const config = {
   },
   module: {
     loaders: [
+      {test: /\.jsx?$/, loader: 'eslint-loader', exclude: /node_modules/, enforce: 'pre'},
       {test: /\.js$/, loader: 'react-hot-loader!babel-loader', exclude: /node_modules/},
       {test: /\.jsx$/, loader: 'react-hot-loader!babel-loader', exclude: /node_modules/},
       {test: /\.woff$/, loader: 'url-loader?limit=60000&mimetype=application/font-woff&name=/fonts/[name].[ext]'},
