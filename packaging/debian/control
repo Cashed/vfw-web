@@ -1,0 +1,16 @@
+Source: vfw-web
+Priority: optional
+Maintainer: Veronica Moreno <vmoreno@blizzard.com>
+Package: vfw-web
+Standards-Version: 3.9.6
+Section: web
+Build-Depends: nodejs (>= 7.6)
+Homepage: https://github.com/Cashed/vfw-web
+Vcs-Git: git://github.com/Cashed/vfw-web.git
+Vcs-Browser: https://github.com/Cashed/vfw-web/tree/master
+Version: 0.0.1
+Architecture: any
+Multi-Arch: same
+Depends: nodejs (>= 7.6)
+Description: Veronica VFW website
+ VFW website made in a join venture of Veronica and Stephen
