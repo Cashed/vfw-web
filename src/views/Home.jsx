@@ -1,18 +1,18 @@
+// @flow
 import React from 'react';
 import {Button} from 'semantic-ui-react';
 
-class Home extends React.Component {
-  constructor() {
-    super();
+type State = {
+  name: string
+};
 
-    this.state = {
-      name: 'Veronica'
-    };
+class Home extends React.Component<{}, State> {
+  state = {
+    name: 'Veronica'
+  };
 
-    this.changeName = this.changeName.bind(this);
-  }
-
-  changeName() {
+  changeName = (event: SyntheticEvent<HTMLButtonElement>) => {
+    console.log(event.currentTarget);
     let name;
 
     if (this.state.name === 'Veronica') {

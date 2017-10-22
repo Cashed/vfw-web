@@ -12,10 +12,20 @@ module.exports = {
     }
   },
   "plugins": [
-    "react"
+    "react",
+    "flowtype"
   ],
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended"
-  ]
-}
+    "plugin:react/recommended",
+    "plugin:flowtype/recommended"
+  ],
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  },
+  "rules": {
+    "no-console": 0
+  }
+};
